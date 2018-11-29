@@ -188,7 +188,8 @@ var swfobject = function () {
     function testPlayerVersion() {
         var b = doc.getElementsByTagName("body")[0];
         var o = createElement(OBJECT);
-        o.setAttribute("style", "visibility: hidden;");
+        //o.setAttribute("style", "visibility: hidden;");
+        o.setAttribute("style", "position: absolute; left: -500px; top: -500px; width: 400px; height: 300px;");
         o.setAttribute("type", FLASH_MIME_TYPE);
         var t = b.appendChild(o);
         if (t) {
